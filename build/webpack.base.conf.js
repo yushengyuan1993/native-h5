@@ -13,7 +13,7 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/index.js'
+    app: ['babel-polyfill', './src/index.js']
   },
   externals:{
     'vue': 'Vue',
