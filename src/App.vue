@@ -27,7 +27,7 @@ export default {
     warn (res) {
       setTimeout(() => {
         let i = 1;
-        !!i && alert(res)
+        // !!i && alert(res)
       }, 1000);
     }
   }
