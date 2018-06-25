@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    index
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld
   },
   mounted () {
     let p = new Promise((resolve, reject) => {
