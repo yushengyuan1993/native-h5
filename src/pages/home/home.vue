@@ -23,7 +23,7 @@ export default {
     }
   },
   mounted () {
-    axios.post('http://test-keepapi.kuaizaixuetang.com/course/list', {
+    axios.post('course/list', {
       
     })
     .then(res => {
