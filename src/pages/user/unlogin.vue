@@ -1,16 +1,16 @@
 <template>
-  <div class="home">
-
+  <div class="unlogin">
+    未登录
+    <button class="btn btn-linear">登录</button>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'home',
+  name: 'unlogin',
   data () {
     return {
-
+      
     }
   },
   mounted () {

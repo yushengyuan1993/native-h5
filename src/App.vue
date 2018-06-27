@@ -1,44 +1,73 @@
 <template>
   <div id="app">
     <router-view></router-view>
+
+    <!-- 底部菜单 -->
+    <kz-footer></kz-footer>
   </div>
 </template>
 
 <script>
+import kzFooter from './components/footer'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+    kzFooter
+  },
+  data () {
+    return {
+      
+    }
   },
   mounted () {
-    let p = new Promise((resolve, reject) => {
-      if (1>0) {
-        resolve('ysy')
-      }
-    })
-    p.then(res => {
-      this.warn(res);
-    })
+
   },
   methods: {
-    warn (res) {
-      setTimeout(() => {
-        let i = 1;
-        // !!i && alert(res)
-      }, 1000);
-    }
+    
   }
 }
 </script>
 
 <style>
+body {
+  margin: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #251B18;
+  font-size: 0.373333rem;
+}
+ul,ol,li,h1,h2,h3,h4,h5,h6,input,button,p,th,td { 
+  margin: 0; 
+  padding: 0; 
+}
+ol,ul,li { 
+	list-style: none; 
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+  font-size: inherit;
+}
+body a {
+  color: #272424;
+}
+img { 
+	border: none; 
+	vertical-align: bottom;
+}
+.clearfix {
+  display: inline-block;
+  content: '';
+  clear: both;
+  width: 100%;
+}
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
 }
 </style>

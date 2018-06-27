@@ -1,0 +1,7 @@
+.btn {
+  border: none;
+  outline: none;
+  &.btn-linear {
+    background: linear-gradient(left, #FFF000 0%, #FFDC02 50%, #FCC600 100%)
+  }
+}
